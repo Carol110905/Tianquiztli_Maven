@@ -1,20 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package controlador.Productos;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.InputStream;
-import javax.swing.JOptionPane;
-import javax.swing.JTable;
-import modelo.VisualizarProducto.ProductoDAO;
-import modelo.VisualizarProducto.Productos;
-import vista.Productos.PantallaEditarProductos;
-import vista.Productos.PantallaRegistrarProductos;
-import vista.Productos.VisualizarProductosVendedor;
+import java.io.*;
+import javax.swing.*;
+import modelo.VisualizarProducto.*;
+import vista.Productos.*;
 
 /**
  *

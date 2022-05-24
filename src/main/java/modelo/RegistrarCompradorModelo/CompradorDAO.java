@@ -1,8 +1,7 @@
 package modelo.RegistrarCompradorModelo;
 
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-import javax.swing.JOptionPane;
+import java.sql.*;
+import javax.swing.*;
 import modelo.ConexionBD;
 
 public class CompradorDAO {

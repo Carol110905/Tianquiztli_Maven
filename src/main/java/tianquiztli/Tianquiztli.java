@@ -1,14 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
- */
-
 package tianquiztli;
 
-import controlador.Productos.ControladorPantallaRegistrarProductos;
-import modelo.Productos.Producto_DAO;
-import vista.Productos.PantallaRegistrarProductos;
-import vista.Productos.VisualizarProductos;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.UIManager;
+import static javax.swing.UIManager.getInstalledLookAndFeels;
 
 /**
  *
@@ -16,11 +11,35 @@ import vista.Productos.VisualizarProductos;
  */
 public class Tianquiztli {
     
-    public static void main(String[] args) {
+   public static void main(String args[]) {
+
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(VentanaLogin.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            Logger.getLogger(VentanaLogin.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            Logger.getLogger(VentanaLogin.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            Logger.getLogger(VentanaLogin.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new VentanaLogin().setVisible(true);
+            }
+        });
+    }
 
         /*VisualizarProductos vp = new VisualizarProductos();
         vp.setVisible(true);
-        vp.setLocationRelativeTo(null);*/
+        vp.setLocationRelativeTo(null);
         VentanaLogin log = new VentanaLogin();
         log.setVisible(true);
         log.setLocationRelativeTo(null);
@@ -34,5 +53,5 @@ public class Tianquiztli {
 
 
         pantallaRegistro.setVisible(true);*/
-    }
+    
 }

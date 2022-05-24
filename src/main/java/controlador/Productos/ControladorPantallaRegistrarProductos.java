@@ -1,16 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package controlador.Productos;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.InputStream;
-import javax.swing.JOptionPane;
-import modelo.Productos.Producto;
-import modelo.Productos.Producto_DAO;
-import vista.Productos.PantallaRegistrarProductos;
+import java.io.*;
+import javax.swing.*;
+import modelo.Productos.*;
+import vista.Productos.*;
 
 /**
  *

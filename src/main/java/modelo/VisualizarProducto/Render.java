@@ -1,4 +1,3 @@
-
 package modelo.VisualizarProducto;
 
 import java.awt.Component;

@@ -1,11 +1,8 @@
 package controlador.RegistrarCompradorControlador;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import javax.swing.JOptionPane;
-import modelo.RegistrarCompradorModelo.Comprador;
-import modelo.RegistrarCompradorModelo.CompradorDAO;
-import vista.RegistrarCompradorVista.RegistrarComprador;
+import javax.swing.*;
+import modelo.RegistrarCompradorModelo.*;
+import vista.RegistrarCompradorVista.*;
 
 public class CompradorControlador{
     private Comprador comprador;

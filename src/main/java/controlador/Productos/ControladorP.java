@@ -1,18 +1,14 @@
 package controlador.Productos;
 
 import modelo.VisualizarProducto.*;
-import java.awt.image.BufferedImage;
-import java.io.ByteArrayInputStream;
-import java.io.InputStream;
-import java.util.ArrayList;
-import javax.imageio.ImageIO;
-import javax.swing.ImageIcon;
-import javax.swing.JLabel;
-import javax.swing.JTable;
-import javax.swing.table.DefaultTableModel;
-import modelo.*;
-import vista.Productos.VisualizarProductos;
-import vista.Productos.VisualizarProductosVendedor;
+import java.awt.image.*;
+import java.io.*;
+import java.util.*;
+import javax.imageio.*;
+import javax.swing.*;
+import javax.swing.table.*;
+import vista.Productos.*;
+
 public class ControladorP {
      ProductoDAO dao = null;
      VisualizarProductos vp;
@@ -193,9 +189,6 @@ public class ControladorP {
             tabla.setRowHeight(60);
         }
     }
-    
-     
-     
      
      public void vAccesorio(JTable tabla){
         

@@ -1,17 +1,13 @@
 package modelo.RegistrarVendedorModelo;
 
-import tianquiztli.*;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import java.sql.*;
+import java.util.logging.*;
 
 public class Conexion {
     private final String base = "tianquiztli";
     private final String user = "root";
     private final String password = "";
-    private final String url = "jdbc:mysql://192.168.64.2:3306/" + base;
+    private final String url = "jdbc:mysql://localhost:3306/" + base;
     private Connection con = null;
     
     public Connection getConnection(){

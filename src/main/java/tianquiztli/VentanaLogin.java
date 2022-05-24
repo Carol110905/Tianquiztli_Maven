@@ -4,11 +4,9 @@ import controlador.Productos.ControladorP;
 import controlador.PedidoR.TablaPedidoR;
 import controlador.RegistrarCompradorControlador.CompradorControlador;
 import controlador.RegistrarVendedorControlador.VendedorControlador;
-import java.awt.HeadlessException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
@@ -30,6 +28,7 @@ public class VentanaLogin extends javax.swing.JFrame {
     
     public VentanaLogin() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     @SuppressWarnings("unchecked")
