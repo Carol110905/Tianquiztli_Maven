@@ -16,12 +16,10 @@ import javax.swing.table.DefaultTableModel;
 public class AsignarP extends JFrame {
     
     public JButton SeleccionarP, SeleccionarR, AsignarPedido;
-    public JTable TablaP;
-    public JTable TablaR;
+    public JTable TablaP, TablaR;
     public JPanel Panel;
     private JScrollPane jScrollPane1,jScrollPane2;
-    public DefaultTableModel modeloT;
-    public DefaultTableModel modelo;
+    public DefaultTableModel modeloT, modelo;
     public String IdP, IdR, estado;
     public int id_R, id_Pe, id_P, Estado;
     public JLabel imagen, r, p;
